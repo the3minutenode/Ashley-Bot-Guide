@@ -1,68 +1,76 @@
+﻿[🏠 Home](../README.md) · [Getting in](introduction.md) · [XP](xp-and-levels.md) · [Levels & roles](levels-and-roles.md) · [/rank](rank-command.md) · [Spam](spam-protection.md) · [Weekly report](weekly-report.md) · [Supporters](supporters.md) · [How it was built](how-it-was-built.md) · [FAQ](faq.md)
+
 # Levels and roles
 
-## The role ladder
+## The ladder
 
-You hold **one** level role at a time. When you reach the next one, Ashley gives you the new role
-and removes the old one.
+Everyone climbs the same ladder. You hold **one** ladder role at a time: when you reach the next
+one, Ashley gives it to you and takes the old one away. Each role keeps everything the roles below
+it have.
 
-| Level | Total XP | Role | What it adds |
-|---|---|---|---|
-| 1 | 0 | none | You can read the public channels and post in the introduction channel |
-| 2 | 20 | **Member** | Sending messages and access to the workflow downloads |
-| 5 | 800 | **Sampler** | Everything Member has, plus creating public threads and creating polls |
-| 10 | 4,050 | **Checkpoint** | Everything Sampler has, plus more perks |
+| Level | Total XP | Role | Adds | Fastest* |
+|---|---|---|---|---|
+| 1 | 0 | none | Read public channels, react, post in `#🙋‍♂️-introduction` | |
+| **2** | **20** | **Member** | Post everywhere, attach files, forum posts, `#🎥-workflows` (workflow downloads) | your introduction |
+| **4** | **450** | **Sampler** | Public threads, polls, `#🧬-workflows-advanced` | ~5 days |
+| **7** | **1,800** | **Checkpoint** | Embed links, external emoji and stickers | ~18 days |
+| **11** | **5,000** | **Verified Node** | `#🔬-lab` (high-level chat, early releases), listed separately in the member list | ~50 days |
+| **15** | **9,800** | **Node Architect** | Listed above Verified Node in the member list | ~100 days |
 
-Each role includes everything the one below it has. Perks are the server's choice and may change,
-so check the server's rules channel for the current list.
+\* "Fastest" means hitting the [100 XP daily limit](xp-and-levels.md#the-daily-limit-100-xp)
+every single day. A normal regular takes several times longer: Sampler in a few weeks, Verified Node
+in six months or more.
+
+**Verified Node can also be unlocked by supporting the channel on Ko-fi.** See
+[Supporters](supporters.md).
+
+Perks may change. `#📜-rules` has the current list.
 
 ## XP needed per level
 
-Level 2 is a flat 20 XP. From level 3, total XP = 50 × (level − 1)².
+Level 2 is 20 XP. From level 3 on, level *n* needs **50 × (n − 1)²** XP in total. Early levels come
+quickly, later ones take longer and longer.
 
-| Level | Total XP | XP from previous level |
-|---|---|---|
-| 1 | 0 | n/a |
-| 2 | 20 | 20 |
-| 3 | 200 | 180 |
-| 4 | 450 | 250 |
-| 5 | 800 | 350 |
-| 6 | 1,250 | 450 |
-| 7 | 1,800 | 550 |
-| 8 | 2,450 | 650 |
-| 9 | 3,200 | 750 |
-| 10 | 4,050 | 850 |
-| 11 | 5,000 | 950 |
-| 12 | 6,050 | 1,050 |
-| 13 | 7,200 | 1,150 |
-| 14 | 8,450 | 1,250 |
-| 15 | 9,800 | 1,350 |
-| 16 | 11,250 | 1,450 |
-| 17 | 12,800 | 1,550 |
-| 18 | 14,450 | 1,650 |
-| 19 | 16,200 | 1,750 |
-| 20 | 18,050 | 1,850 |
+| Level | Total XP | Gap from previous | | Level | Total XP | Gap from previous |
+|---|---|---|---|---|---|---|
+| 2 | 20 | 20 | | 12 | 6,050 | 1,050 |
+| 3 | 200 | 180 | | 13 | 7,200 | 1,150 |
+| 4 | 450 | 250 | | 14 | 8,450 | 1,250 |
+| 5 | 800 | 350 | | 15 | 9,800 | 1,350 |
+| 6 | 1,250 | 450 | | 16 | 11,250 | 1,450 |
+| 7 | 1,800 | 550 | | 17 | 12,800 | 1,550 |
+| 8 | 2,450 | 650 | | 18 | 14,450 | 1,650 |
+| 9 | 3,200 | 750 | | 19 | 16,200 | 1,750 |
+| 10 | 4,050 | 850 | | 20 | 18,050 | 1,850 |
+| 11 | 5,000 | 950 | | … | … | … |
 
-Levels above 10 are tracked and shown on `/rank`, but do not yet come with a new role. More tiers
-may be added later.
+Levels keep going past 20. They show on `/rank`, but the last new role is at level 15.
 
-## When do I get my role?
+## When you level up
 
-- Immediately after the message that takes you over the threshold. Ashley announces it
-  (a ⭐ reaction for a normal level-up, a short message for a new role).
-- If Ashley was offline, she catches up when she returns. XP from missed messages is added silently
-  and roles are corrected afterwards.
+Right after the message that takes you over the line:
 
-## Who gets no level role
+| What happened | What you see |
+|---|---|
+| Reached level 2 in `#🙋‍♂️-introduction` | ✅ and a welcome reply ([Getting in](introduction.md)) |
+| Reached level 2 anywhere else | A reply: "🔓 … reached level 2, and #workflows is now unlocked for you!" |
+| Reached a level with a new role | A post: "🎉 … reached **level 7** and is now a **Checkpoint**!" |
+| Any other level | A ⭐ reaction on your message |
 
-**Staff, the server owner and bots.** Their own roles already carry every permission. They still
-earn XP and can be looked up by moderators.
+Level-ups and the introduction replies are the only public posts where Ashley @-mentions you.
 
-## Quick path
+## How Ashley decides your role
 
-```
-Introduce yourself  ->  35 XP   ->  Level 2  (Member)
-~765 more XP        ->  800 XP  ->  Level 5  (Sampler)
-~3,250 more XP      ->  4,050   ->  Level 10 (Checkpoint)
-```
+You always get the **higher** of two things:
 
-See also: [How XP works](xp-and-levels.md) · [The `/rank` command](rank-command.md)
+- the role your level has earned, and
+- the highest ladder role you already hold (for example Verified Node from
+  [Ko-fi](supporters.md)).
+
+Every lower ladder role is removed. If a role given from outside is taken away later, Ashley gives
+back the role your level earned, within seconds. Ashley also re-checks everyone's role each time she
+starts.
+
+---
+
+[🏠 Home](../README.md) · [← How XP works](xp-and-levels.md) · Next: [The `/rank` command →](rank-command.md)

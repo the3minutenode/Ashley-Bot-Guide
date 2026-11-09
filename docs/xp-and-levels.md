@@ -1,78 +1,80 @@
+﻿[🏠 Home](../README.md) · [Getting in](introduction.md) · [XP](xp-and-levels.md) · [Levels & roles](levels-and-roles.md) · [/rank](rank-command.md) · [Spam](spam-protection.md) · [Weekly report](weekly-report.md) · [Supporters](supporters.md) · [How it was built](how-it-was-built.md) · [FAQ](faq.md)
+
 # How XP works
 
-XP (experience points) measures how much you take part in the community. More XP means a higher
-level, a higher leaderboard rank and better roles.
+XP (experience points) measures how much you take part. More XP means a higher level, a higher rank
+and better roles ([Levels and roles](levels-and-roles.md)).
 
 ## Ways to earn XP
 
 | Action | XP | Rules |
 |---|---|---|
-| **Message** | 10 | Needs at least **8 letters or digits** of real text. Links, mentions, custom emoji and plain emoji do not count. Once per **60 seconds**. Repeating your previous message earns nothing |
-| **Image in the showcase channel** | +15 | Once per **5 minutes**. Stacks with the message XP if you add a caption |
-| **Reply in someone else's help thread** | +15 | Needs at least 8 characters. Once per **5 minutes**. Replying in your own thread does not count |
-| **Giving a reaction** | 2 | **Members only** (level 2 or higher). Once per **60 seconds** |
-| **Receiving a reaction** | 3 | Only from Members. Each person counts once per message, at most **10 reactors** per message. Reacting to your own post does not count |
-| **First valid introduction** | +25 | One time only, ever. See [the introduction gate](introduction.md) |
-| **Bonus events** | ×1.1 to ×5 | Staff can run limited-time multipliers. See below |
+| **Message** | 10 | At least **8 characters** of real text (links, @mentions and custom emoji don't count). Once per **minute**. Repeating your previous message earns nothing |
+| **Image in `#🏆-showcase`** | +15 | Once per **5 minutes**. Add a caption of 8+ characters and the message XP comes on top |
+| **Reply in someone else's help thread** | +15 | In the `❓-help` forum, at least 8 characters, once per **5 minutes**. Replies in your own thread don't count |
+| **Giving a reaction** | 2 | **Members only**. Once per **minute** |
+| **Getting a reaction** | 3 | Only from Members. Each person counts once per message, up to **10 people** per message. Reacting to yourself doesn't count |
+| **First introduction** | +25 | Once, ever. See [Getting in](introduction.md) |
+| **Bonus event** | ×1.1 to ×5 | Limited-time multiplier, see below |
 
-A single message can earn several rewards at once.
+One message can earn several of these at once.
 
 ### Examples
 
-| You post... | XP |
+| You post… | XP |
 |---|---|
-| "Just finished my first SDXL workflow, so happy with the result" in chat | 10 |
-| The same sentence again right after | 0 |
+| "Just finished my first SDXL workflow, so happy" in chat | **10** |
+| The same sentence again right after | **0** (repeat) |
+| Another message 20 seconds later | **0** (cooldown) |
 | An image with a good caption in showcase | 10 + 15 = **25** |
 | An image with no caption in showcase | **15** |
-| A helpful 2-line answer in someone else's help thread | 10 + 15 = **25** |
-| "lol" | 0 (too short) |
-| Your introduction ("Hi from Brazil, I make product shots") | 10 + 25 = **35** |
+| A helpful answer in someone else's help thread | 10 + 15 = **25** |
+| "lol" | **0** (too short) |
+| Your introduction "Hi from Brazil, I make product shots" | 10 + 25 = **35** |
 
-### What does not earn XP
+## The daily limit: 100 XP
 
-- Messages removed by the spam filter.
-- Channels staff have marked as no-XP (for example admin and retired channels).
-- Very short messages, repeats, or messages inside the cooldown window.
-- Reactions from people who are not yet Members (this stops people skipping the introduction step).
+You can earn at most **100 XP per day** from messages, showcase, help replies and reactions.
+
+- The day resets at **00:00 UTC**.
+- The introduction bonus doesn't count toward the limit.
+- During a ×2 bonus event the limit is ×2 as well (200).
+- `/rank` shows how much of today's limit you've used.
+
+**Why:** the cooldowns alone barely slow down someone grinding for XP. The limit means a few good
+messages a day earn as much as hours of grinding, so higher roles reflect weeks of real presence.
+
+## What earns nothing
+
+- Messages the [spam filter](spam-protection.md) removes.
+- Very short messages, repeats, and anything inside a cooldown.
+- Reactions from people who haven't introduced themselves yet (so nobody can react their way past
+  the introduction).
 
 ## Bonus events
 
-Staff can start a bonus event, for example "double XP for 48 hours after a new video".
+From time to time there's a bonus event, for example "×2 for 48 hours after a new video".
 
-- The multiplier is between **×1.1 and ×5**, for a set time, server-wide or in one channel.
-- It multiplies message, showcase, help and reaction XP.
-- It does **not** multiply the one-time introduction bonus.
-- If several events overlap, the **highest** multiplier applies, they do not stack.
-- Events are normally announced in the announcements channel.
-
-## The level curve
-
-- **Level 2** needs **20 XP** in total.
-- From **level 3** on, level *n* needs **50 × (n − 1)²** XP in total.
-
-That is a quadratic curve: early levels come fast, later ones take progressively longer. The full
-table is in [Levels and roles](levels-and-roles.md).
+- Between **×1.1 and ×5**, for a set time, server-wide or in one channel.
+- Multiplies messages, showcase, help and reactions. **Not** the introduction bonus.
+- If two events overlap, the **higher** one applies. They don't add up.
+- Usually announced in `#📢-announcements`.
 
 ## Levels only go up
 
-If a moderator ever removes XP (for example for farming), your **level and role are kept**. Levels
+If XP is removed (for example for copy-paste farming), your **level and role stay**. Levels
 never drop.
 
-## How fast can I level up?
+## When Ashley was offline
 
-A regular who posts a few real messages a day and gets some reactions earns roughly **50 XP a day**.
-At that pace:
-
-- Level 5 takes about **2 to 3 weeks**.
-- Level 10 takes about **3 months**.
-
-Quality beats volume: the 60-second cooldown and the repeat check mean that one thoughtful message a
-minute is the most you can earn from chat, and showcase and help posts are worth more.
+Messages posted while Ashley was restarting still count. When she comes back she reads what she
+missed, checks it for spam and adds the XP quietly (no ⭐ or public post).
 
 ## Fair play
 
-XP is recorded with a reason for every point, so staff can see exactly where it came from.
-Farming (copy-paste, cross-posting, reaction swapping) is easy to spot and is reversed by staff.
+Copy-paste, cross-posting and reaction swapping are easy to spot, and XP earned that way is
+removed. Taking part for real is the only way up.
 
-See also: [The `/rank` command](rank-command.md) · [FAQ](faq.md)
+---
+
+[🏠 Home](../README.md) · [← Getting in](introduction.md) · Next: [Levels and roles →](levels-and-roles.md)
